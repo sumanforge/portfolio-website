@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman Das | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Cursor Elements -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">SD<span>.</span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <!-- Light/Dark Mode Switcher Toggle Button -->
+            <button class="theme-toggle hover-target" id="theme-toggle" aria-label="Toggle visual theme">
+                <i class="fa-solid fa-moon moon-icon"></i>
+                <i class="fa-solid fa-sun sun-icon"></i>
+            </button>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="reveal-text">Hi, I'm <span class="accent-text">Suman</span>.</h1>
+                <p class="hero-subtitle">I am a <span class="typing-text" id="typing-text"></span><span class="cursor-blink">|</span></p>
+                <a href="#work" class="btn hover-target">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-img-container">
+                        <div class="about-avatar-placeholder">
+                            <!-- Update 'profile.jpg' with your actual image file path or web URL -->
+                            <img src="images/profile.png" alt="Suman Das Profile Photo" class="profile-photo">
+                        </div>
+                    </div>
+                    <div class="about-details">
+                        <p class="bio">
+                            I'm a <strong>B.Tech graduate in Computer Science and Engineering</strong> with a passion for full-stack web development.
+                            I have experience with <strong>Java, Python, PHP, Laravel, CodeIgniter, JavaScript, React, MySQL, MongoDB, HTML, and CSS</strong>.
+                            As a motivated fresher, I'm eager to build innovative applications, solve real-world problems, and continuously grow as a software developer.
+
+
+                        </p>
+                        <h3>Skills & Technologies</h3>
+                        <div class="skills-grid">
+                            <span class="skill-badge">Full Stack Development</span>
+                            <span class="skill-badge">PHP / Laravel / CodeIgniter</span>
+                            <span class="skill-badge">JavaScript (ES6+)</span>
+                            <span class="skill-badge">React / Node.js</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">HTML5 / CSS3</span>
+                            <span class="skill-badge">UI/UX Architecture</span>
+                            <span class="skill-badge">MySQL / MongoDB</span>
+                            <span class="skill-badge">RESTful APIs</span>
+                            <span class="skill-badge">Git / Version Control</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work/Portfolio Section -->
+        <section id="work" class="portfolio-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Selected Work</h2>
+                <div class="portfolio-grid">
+                    <!-- Card 1 -->
+                    <div class="project-card tilt-target">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-featured digital storefront engineered with optimized database interactions and sleek transactional workflows.</p>
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                            </div>
+                            <a href="#" class="project-link hover-target">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="project-card tilt-target">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>SaaS Analytics Dashboard</h3>
+                            <p>Real-time telemetry and data tracking interface featuring responsive canvas structures and dark UI frameworks.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>REST API</span>
+                                <span>CSS Grid</span>
+                            </div>
+                            <a href="#" class="project-link hover-target">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="project-card tilt-target">
+                        <div class="project-img-placeholder">
+                            <i class="fa-solid fa-bezier-curve"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Custom Content Engine</h3>
+                            <p>A headless, optimized architecture designed for lightweight content management and rapid delivery pipelines.</p>
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>Vanilla JS</span>
+                                <span>Tailwind</span>
+                            </div>
+                            <a href="#" class="project-link hover-target">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form" id="portfolio-form">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Name" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Email" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <!-- Status Alert Notification Box -->
+                        <div id="form-status" class="form-status-message"></div>
+
+                        <button type="submit" class="btn hover-target" id="form-submit-btn">Send Message</button>
+                    </form>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/suman-das-26" class="social-icon hover-target" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sumancse" class="social-icon hover-target" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon hover-target" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Suman Das. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
