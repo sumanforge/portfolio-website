@@ -1,4 +1,4 @@
-# Suman Das | Portfolio Website
+# Personal Portfolio Website
 
 This is a modern personal portfolio website built with HTML, CSS, and JavaScript. It showcases my background, technical skills, selected projects, and contact information in a clean and interactive experience.
 
